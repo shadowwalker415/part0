@@ -1,0 +1,11 @@
+newNoteSPAprocessDiagram
+  participant browser
+  participant server
+
+
+  New note create by user
+  browser rerenders with new note 
+  browser->> server: POST https://studies.cs.helsinki.fi/exampleapp/spa
+  activate server
+  server queries database with update operation 
+  deactivate server
